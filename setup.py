@@ -49,7 +49,7 @@ elif sys.version_info >= (3, 0) and sys.version_info < (3, 10):  # 3.*
 elif sys.version_info >= (3, 10):  # 3.*
     install_requires.extend([
         'wsgidav',
-        'tornado>=6',
+        'tornado>=4.5,<5',
         'requests>=2.8'
     ])
 else:  # 2.7
