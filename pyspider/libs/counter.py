@@ -13,8 +13,11 @@ from collections import deque
 try:
     from UserDict import DictMixin
 except ImportError:
-    from collections import Mapping as DictMixin
-
+    try:
+        from collections import Mapping as DictMixin
+    except ImportError:
+        from collections.abc import Mapping as DictMixin
+        
 import six
 from six import iteritems
 from six.moves import cPickle
