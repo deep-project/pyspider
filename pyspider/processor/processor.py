@@ -60,7 +60,7 @@ class ProcessorResult(object):
 
 
 class Processor(object):
-    PROCESS_TIME_LIMIT = 30
+    PROCESS_TIME_LIMIT = 120
     EXCEPTION_LIMIT = 3
 
     RESULT_LOGS_LIMIT = 1000

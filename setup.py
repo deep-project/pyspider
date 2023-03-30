@@ -46,6 +46,11 @@ elif sys.version_info >= (3, 0):  # 3.*
         'tornado>=3.2,<=4.5.3',
         'pyquery',
     ])
+elif sys.version_info >= (3, 10):  # 3.*
+install_requires.extend([
+    'tornado>=6',
+    'requests>=2.8'
+])
 else:  # 2.7
     install_requires.extend([
         'wsgidav',
