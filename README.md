@@ -14,11 +14,14 @@
 1.设置环境变量
 
     export PYCURL_SSL_LIBRARY=nss;
-2.安装
+2.需要先安装git(如果未安装的话)
+
+    apt install git // debian
+3.安装
 
     pip install git+https://github.com/deep-project/pyspider.git
 
-3.启动
+4.启动
 
     pyspider
 
